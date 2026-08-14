@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 let Hero = () => {
     let videoRef = useRef()
-    let videoTimeLineRef = useRef()
 
     let isMobile = useMediaQuery({maxWidth: 767})
 
@@ -75,7 +74,7 @@ let Hero = () => {
             <img src="/images/hero-right-leaf.png" alt="hero-right-leaf" className="right-leaf" />
             <div className='body'>
                 <div className="content">
-                    <div className="space-y-5 hidden md:block">
+                    <div className="space-y-5 md:block">
                         <p >Cool. Crisp. Classic.</p>
                         <p className='subtitle'>Sip the spirit <br/> of Summer</p>
                     </div>
@@ -93,7 +92,7 @@ let Hero = () => {
             <div className='video absolute inset-0'>
                 <video
                     ref={videoRef}
-                    src= '/videos/input.mp4'
+                    src= '/videos/output.mp4'
                     muted
                     playsInline
                     preload='auto'
