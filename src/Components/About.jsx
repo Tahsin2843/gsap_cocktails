@@ -1,10 +1,31 @@
 import React from "react";
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/all";
-
-gsap.registerPlugin(ScrollTrigger)
+import {SplitText} from "gsap/all";
+import {useGSAP} from "@gsap/react";
 
 let About = () => {
+    useGSAP(() =>{
+        let titleSplit = SplitText.create('#about h2', {
+            type : 'words'
+        })
+
+        let scrollTimeline = gsap.timeline({
+            scrollTrigger:{
+                trigger: '#about',
+                start: 'top 100%',
+                end: 'bottom 0%',
+                scrub: true
+            }
+        })
+
+        scrollTimeline
+            .from(titleSplit.words, {
+                opacity: 0, duration: 1, yPercent: 100, stagger: .09
+            })
+            .from('.top-grid div, .bottom-grid div', {
+                opacity: 0.7, ease: 'power1.inOut', duration: 1
+            }, )
+    })
 
 
     return (
