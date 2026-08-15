@@ -14,14 +14,14 @@ let Art = () =>{
                 trigger: '#art',
                 start: start,
                 end: 'bottom center',
-                scrub: 1.5,
+                scrub: 2,
                 pin: true
             }
         })
 
         maskTimeline
             .to('.will-fade', {opacity: 0, ease: 'power1.inOut', stagger: .2, })
-            .to('.masked-img', {scale: 2, maskPosition: 'center', maskSize: 300, duration: 1, ease: 'power1.inOut'})
+            .to('.masked-img', {scale: 1.5, maskPosition: 'center', maskSize: 400, duration: 1, ease: 'power1.inOut'})
             .to('#masked-content', {opacity: 1, duration: 1, ease: "power1.inOut"})
     })
 
@@ -46,7 +46,7 @@ let Art = () =>{
                         <img src="/images/under-img.jpg" className='abs-center masked-img object-contain' alt="cocktail"/>
                     </div>
 
-                    <ul className='spacey-y-4 will-fade'>
+                    <ul className='spacey-y-4 will-fade '>
                         {featureLists.map((feature, index) =>(
                             <li key={feature} className='flex items-center justify-start gap-2'>
                                 <img src="/images/check.png" alt="check"/>

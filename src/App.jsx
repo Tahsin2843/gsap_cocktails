@@ -9,6 +9,8 @@ import Hero from "./Components/Hero.jsx";
 import Cocktails from "./Components/Cocktails.jsx";
 import About from "./Components/About.jsx";
 import Art from "./Components/Art.jsx";
+import Menu from "./Components/Menu.jsx";
+import Contact from "./Components/Contact.jsx";
 
 let App = () => {
     return (
@@ -18,6 +20,8 @@ let App = () => {
             <Cocktails />
             <About />
             <Art />
+            <Menu />
+            <Contact />
         </main>
     )
 }
