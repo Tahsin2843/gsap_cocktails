@@ -70,8 +70,8 @@ let Hero = () => {
         <>
         <section id="hero" className="noisy">
             <h1 className='title'>MOJITO</h1>
-            <img src="/images/hero-left-leaf.png" alt="hero-left-leaf" className="left-leaf" />
-            <img src="/images/hero-right-leaf.png" alt="hero-right-leaf" className="right-leaf" />
+            <img src="/gsap_cocktails/images/hero-left-leaf.png" alt="hero-left-leaf" className="left-leaf" />
+            <img src="/gsap_cocktails/images/hero-right-leaf.png" alt="hero-right-leaf" className="right-leaf" />
             <div className='body'>
                 <div className="content">
                     <div className="space-y-5 md:block">
@@ -92,7 +92,7 @@ let Hero = () => {
             <div className='video absolute inset-0'>
                 <video
                     ref={videoRef}
-                    src= '/videos/output.mp4'
+                    src= '/gsap_cocktails/videos/output.mp4'
                     muted
                     playsInline
                     preload='auto'

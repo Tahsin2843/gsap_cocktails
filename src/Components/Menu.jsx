@@ -31,8 +31,8 @@ let Menu = () =>{
 
     return(
         <section id='menu' aria-labelledby='menu-heading'>
-            <img src="/images/slider-left-leaf.png" alt="left-leaf" id='m-left-leaf'/>
-            <img src="/images/slider-right-leaf.png" alt="right-leaf" id='m-right-leaf'/>
+            <img src="/gsap_cocktails/images/slider-left-leaf.png" alt="left-leaf" id='m-left-leaf'/>
+            <img src="/gsap_cocktails/images/slider-right-leaf.png" alt="right-leaf" id='m-right-leaf'/>
 
             <h2 id='menu-heading' className='sr-only'> Cocktail Menu </h2>
 
@@ -58,12 +58,12 @@ let Menu = () =>{
                 <div className="arrows">
                     <button onClick={() => gotoSlide(currentIndex - 1)} className='text-left'>
                         <span> {prevCocktail.name} </span>
-                        <img src="/images/right-arrow.png" aria-hidden='true' alt=""/>
+                        <img src="/gsap_cocktails/images/right-arrow.png" aria-hidden='true' alt=""/>
                     </button>
 
                     <button onClick={() => gotoSlide(currentIndex + 1)} className='text-left'>
                         <span> {nextCocktail.name} </span>
-                        <img src="/images/left-arrow.png" aria-hidden='true' alt=""/>
+                        <img src="/gsap_cocktails/images/left-arrow.png" aria-hidden='true' alt=""/>
                     </button>
 
                 </div>

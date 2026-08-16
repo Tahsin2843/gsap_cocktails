@@ -23,8 +23,8 @@ let Cocktails = () =>{
 
     return(
         <section className='noisy' id='cocktails'>
-            <img src="/images/cocktail-left-leaf.png" id="c-left-leaf" alt="l-leaf"/>
-            <img src="/images/cocktail-right-leaf.png" id='c-right-leaf' alt="r-leaf"/>
+            <img src="/gsap_cocktails/images/cocktail-left-leaf.png" id="c-left-leaf" alt="l-leaf"/>
+            <img src="/gsap_cocktails/images/cocktail-right-leaf.png" id='c-right-leaf' alt="r-leaf"/>
 
             <div className="list">
                 <div className="popular">

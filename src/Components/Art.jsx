@@ -21,7 +21,7 @@ let Art = () =>{
 
         maskTimeline
             .to('.will-fade', {opacity: 0, ease: 'power1.inOut', stagger: .2, })
-            .to('.masked-img', {scale: 1.5, maskPosition: 'center', maskSize: 400, duration: 1, ease: 'power1.inOut'})
+            .to('.masked-img', {scale: 1.5, maskPosition: 'center', maskSize: 300, duration: 1, ease: 'power1.inOut'})
             .to('#masked-content', {opacity: 1, duration: 1, ease: "power1.inOut"})
     })
 
@@ -34,7 +34,7 @@ let Art = () =>{
                     <ul className='spacey-y-4 will-fade'>
                         {goodLists.map((feature, index) =>(
                             <li key={feature} className='flex items-center gap-2'>
-                                <img src="/images/check.png" alt="check"/>
+                                <img src="/gsap_cocktails/images/check.png" alt="check"/>
                                 {feature}
                             </li>
                         ))}
@@ -43,13 +43,13 @@ let Art = () =>{
 
 
                     <div className="cocktail-img">
-                        <img src="/images/under-img.jpg" className='abs-center masked-img object-contain' alt="cocktail"/>
+                        <img src="/gsap_cocktails/images/under-img.jpg" className='abs-center masked-img object-contain' alt="cocktail"/>
                     </div>
 
                     <ul className='spacey-y-4 will-fade '>
                         {featureLists.map((feature, index) =>(
                             <li key={feature} className='flex items-center justify-start gap-2'>
-                                <img src="/images/check.png" alt="check"/>
+                                <img src="/gsap_cocktails/images/check.png" alt="check"/>
                                 <p className='md:w-fit w-60'> {feature} </p>
                             </li>
                         ))}

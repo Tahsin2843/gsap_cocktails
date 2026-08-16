@@ -59,17 +59,17 @@ let About = () => {
             <div className="top-grid">
                 <div className='xl:col-span-3'>
                     <div className="noisy"/>
-                    <img src="/images/abt1.png" alt=""/>
+                    <img src="/gsap_cocktails/images/abt1.png" alt=""/>
                 </div>
 
                 <div className='xl:col-span-6'>
                     <div className="noisy"/>
-                    <img src="/images/abt2.png" alt=""/>
+                    <img src="/gsap_cocktails/images/abt2.png" alt=""/>
                 </div>
 
                 <div className='xl:col-span-3'>
                     <div className="noisy"/>
-                    <img src="/images/abt3.png" alt=""/>
+                    <img src="/gsap_cocktails/images/abt3.png" alt=""/>
                 </div>
             </div>
 
@@ -77,12 +77,12 @@ let About = () => {
             <div className="bottom-grid">
                 <div className='md:col-span-8'>
                     <div className="noisy"/>
-                    <img src="/images/abt4.png" alt=""/>
+                    <img src="/gsap_cocktails/images/abt4.png" alt=""/>
                 </div>
 
                 <div className='md:col-span-4'>
                     <div className="noisy"/>
-                    <img src="/images/abt5.png" alt=""/>
+                    <img src="/gsap_cocktails/images/abt5.png" alt=""/>
                 </div>
             </div>
         </div>
