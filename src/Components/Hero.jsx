@@ -45,14 +45,15 @@ let Hero = () => {
             .to('.right-leaf', {y: 200}, 0)
 
         let startValue = isMobile? 'top 50%' : 'center 60% '
-        let endValue = isMobile? '158% top' : 'bottom top'
+        let endValue = isMobile? 'bottom bottom' : 'bottom top'
 
 
          let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: 'video',
                 start: startValue,
-                end: endValue,
+                endTrigger: '#cocktails',
+                end: 'bottom bottom',
                 scrub: 0.1,
                 pin: true,
             }
