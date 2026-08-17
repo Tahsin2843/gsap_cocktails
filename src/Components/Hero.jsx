@@ -30,7 +30,7 @@ let Hero = () => {
             opacity: 0,
             ease: 'expo.inOut',
             stagger: .07,
-            delay: .3, duration: 1.8,
+            delay: .3,
 
         })
 
@@ -45,13 +45,14 @@ let Hero = () => {
             .to('.right-leaf', {y: 200}, 0)
 
         let startValue = isMobile? 'top 50%' : 'center 60% '
-        let endValue = isMobile? '120% top' : 'bottom top'
+        let endValue = isMobile? '158% top' : 'bottom top'
 
 
          let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: 'video',
-                start: startValue, end: endValue,
+                start: startValue,
+                end: endValue,
                 scrub: 0.1,
                 pin: true,
             }
