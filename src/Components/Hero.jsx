@@ -52,7 +52,7 @@ let Hero = () => {
             scrollTrigger: {
                 trigger: 'video',
                 start: startValue, end: endValue,
-                scrub: 0.5,
+                scrub: 0.1,
                 pin: true,
             }
         })

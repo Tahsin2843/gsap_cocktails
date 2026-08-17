@@ -14,7 +14,7 @@ let Art = () =>{
                 trigger: '#art',
                 start: start,
                 end: 'bottom center',
-                scrub: 2,
+                scrub: .5,
                 pin: true
             }
         })
